@@ -1,0 +1,149 @@
+body{
+    margin:0;
+
+    background: radial-gradient(circle, #00dfcd, white);
+
+    min-height:100vh;
+}
+
+.card{
+    background: rgba(255,255,255,0.35) !important;
+
+    border:none !important;
+
+    border-radius:15px;
+
+    backdrop-filter: blur(8px);
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.12) !important;
+}
+
+.card h3{
+    font-size:28px;
+
+    font-weight:bold;
+
+    color:black;
+}
+
+.form-control{
+    height:48px;
+
+    border-radius:10px;
+
+    border:1px solid #666;
+
+    background:rgba(255,255,255,0.75);
+
+    font-size:18px;
+}
+
+.form-control:focus{
+    box-shadow:none;
+
+    border:1px solid #27d7c5;
+}
+
+.btn-outline-success{
+    height:48px;
+
+    border-radius:10px;
+
+    font-size:20px;
+
+    border:3px solid #00c853 !important;
+
+    color:#00b248 !important;
+
+    background:white;
+}
+
+.btn-outline-success:hover{
+    background:#00c853 !important;
+
+    color:white !important;
+}
+
+p{
+    font-size:15px;
+}
+
+a{
+    font-weight:bold;
+
+    color:#0d6efd;
+}
+
+a:hover{
+    color:#084298;
+}
+
+.register-card{
+
+    width:90%;
+
+    max-width:350px;
+
+}
+
+@media (max-width:768px){
+
+    .card{
+
+        padding:25px !important;
+
+    }
+
+    .card h3{
+
+        font-size:26px;
+
+    }
+
+    .form-control{
+
+        height:45px;
+
+        font-size:16px;
+
+    }
+
+    .btn-outline-success{
+
+        height:44px;
+
+        font-size:16px;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    .card{
+
+        width:95% !important;
+
+        border-radius:12px;
+
+    }
+
+    .card h3{
+
+        font-size:24px;
+
+    }
+
+    .form-control{
+
+        font-size:15px;
+
+    }
+
+    p{
+
+        font-size:14px;
+
+    }
+
+}

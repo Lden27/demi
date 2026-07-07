@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClassScheduler</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+
+  <div class="logo-title">
+    <span class="icon">🗓️</span>
+    <h1>Thời khóa biểu</h1>
+  </div>
+
+  <input type="text"
+       id="search"
+       class="form-control my-3"
+       placeholder="Tìm môn học, ngày, giờ, phòng...">
+
+  <button class="logout-btn" onclick="logout()">
+    Đăng xuất
+  </button>
+
+</div>
+
+<div class="main-container">
+
+  <div id="scheduleList" class="subject-list"></div>
+
+  <div class="schedule-table">
+    <div class="day" id="T2">
+      <div class="day-title">T2</div>
+    </div>
+    <div class="day" id="T3">
+      <div class="day-title">T3</div>
+    </div>
+    <div class="day" id="T4">
+      <div class="day-title">T4</div>
+    </div>
+    <div class="day" id="T5">
+      <div class="day-title">T5</div>
+    </div>
+    <div class="day" id="T6">
+      <div class="day-title">T6</div>
+    </div>
+    <div class="day" id="T7">
+      <div class="day-title">T7</div>
+    </div>
+    <div class="day" id="CN">
+      <div class="day-title">CN</div>
+    </div>
+  </div>
+
+  <div id="alertBox"></div>
+
+</div>
+<script>
+
+const today = new Date().getDay();
+
+const days = document.querySelectorAll(".day");
+
+let index;
+
+if(today === 0){
+    index = 6;
+}else{
+    index = today - 1;
+}
+
+days[index].classList.add("current-day");
+
+</script>
+<script src="js/utils.js"></script>
+<script src="js/api.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

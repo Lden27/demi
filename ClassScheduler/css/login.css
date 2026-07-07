@@ -1,0 +1,136 @@
+body{
+    margin:0;
+
+    background: radial-gradient(circle, white, #38b6ff);
+
+    min-height:100vh;
+}
+
+.card{
+    background: rgba(255,255,255,0.25) !important;
+
+    border:none !important;
+
+    border-radius:15px;
+
+    backdrop-filter: blur(8px);
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.15) !important;
+}
+
+.card h3{
+    font-weight:bold;
+    color:#000;
+}
+
+.form-control{
+    height:48px;
+
+    border-radius:10px;
+
+    border:1px solid #666;
+
+    background:rgba(255,255,255,0.7);
+
+    font-size:18px;
+}
+
+.form-control:focus{
+    box-shadow:none;
+
+    border:1px solid #4da3d9;
+}
+
+.btn-primary{
+    background:#1677ea !important;
+
+    border:none !important;
+
+    height:45px;
+
+    border-radius:8px;
+
+    font-size:20px;
+
+}
+
+.btn-primary:hover{
+    background: blue !important;
+}
+
+.btn-outline-success{
+    height:45px;
+
+    border-radius:8px;
+
+    font-size:18px;
+
+    border:3px solid #00c853 !important;
+
+    color:#00b248 !important;
+
+    background:white;
+}
+
+.btn-outline-success:hover{
+    background:#00c853 !important;
+
+    color:white !important;
+}
+
+.login-card{
+
+    width:90%;
+
+    max-width:350px;
+
+}
+
+@media (max-width:768px){
+
+    .card{
+
+        padding:25px !important;
+
+    }
+
+    .card h3{
+
+        font-size:30px;
+
+    }
+
+    .form-control{
+
+        height:45px;
+
+        font-size:16px;
+
+    }
+
+    .btn-primary,
+    .btn-outline-success{
+
+        height:42px;
+
+        font-size:16px;
+
+    }
+
+}
+
+@media (max-width:480px){
+
+    .card{
+
+        width:95% !important;
+
+    }
+
+    .card h3{
+
+        font-size:26px;
+
+    }
+
+}
